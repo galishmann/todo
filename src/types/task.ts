@@ -1,4 +1,5 @@
-export type task = {
+export type TaskType = {
+  id: number,
   title: string,
   date: number,
   completed: boolean,

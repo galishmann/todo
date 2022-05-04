@@ -1,13 +1,16 @@
 import React from 'react';
 
+import Tasks from '../Tasks/Tasks';
 
-interface Props {}
 
-class App extends React.PureComponent<Props> {
+const cssPrefix = 'App';
+
+
+class App extends React.PureComponent {
   render() {
     return (
-      <div>
-        App
+      <div className={cssPrefix}>
+        <Tasks />
       </div>
     );
   }
