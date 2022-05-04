@@ -1,6 +1,8 @@
 import React from 'react';
 import { TaskType } from '../../types/Task';
 
+import './Task.sass';
+
 
 interface Props {
   task: TaskType,
