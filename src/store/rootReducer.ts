@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
+import { tasksReducer, tasksReducerPath } from "./tasks/tasks.reducer";
 
 
 export default combineReducers({
-  test: () => 'test'
+  [tasksReducerPath]: tasksReducer,
 });

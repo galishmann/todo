@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Tasks from '../Tasks/Tasks';
+import Tasks from '../Tasks/Tasks.container';
 
 
 const cssPrefix = 'App';
