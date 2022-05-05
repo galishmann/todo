@@ -3,6 +3,8 @@ import { TaskType } from '../../types/TaskType';
 
 import Task from '../Task/Task.container';
 
+import './Tasks.sass';
+
 
 interface Props {
   tasks: TaskType[],
