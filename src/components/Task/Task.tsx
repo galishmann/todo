@@ -6,17 +6,23 @@ import './Task.sass';
 
 interface Props {
   task: TaskType,
+  completeTask: (number) => void,
 }
 
 const cssPrefix = 'Task';
 
 class Task extends React.PureComponent<Props> {
+  onChange = () => {
+    this.props.completeTask(this.props.task.id);
+  }
+
   render() {
-    const { title } = this.props.task;
+    const { title, completed } = this.props.task;
 
     return (
       <div className={cssPrefix}>
-        <p>{title}</p>
+        <input type="checkbox"  checked={completed} onChange={this.onChange} />
+        <span>{title}</span>
       </div>
     );
   }
