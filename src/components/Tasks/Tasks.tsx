@@ -6,11 +6,16 @@ import Task from '../Task/Task';
 
 interface Props {
   tasks: TaskType[],
+  loadTasks: () => void,
 }
 
 const cssPrefix = 'Tasks';
 
 class Tasks extends React.PureComponent<Props> {
+  componentDidMount() {
+    this.props.loadTasks();
+  }
+
   render() {
     const { tasks } = this.props;
 
